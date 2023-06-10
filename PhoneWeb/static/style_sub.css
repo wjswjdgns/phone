@@ -1,0 +1,399 @@
+/* Noto Sans 국문 'Noto Sans KR', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1,p{
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+
+a{
+    text-decoration: none !important;
+    color:#000 !important;
+}
+
+nav ul li:hover{
+    color: #ff2a48;
+}
+ul{
+    list-style: none;
+}
+
+.sub_title{
+    font-weight: 900;
+}
+.information_content{
+    margin-top:30px;
+    margin-bottom:60px;
+}
+
+/*top*/
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top_area{
+    border-bottom : 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+/*Nav*/
+nav ul{
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+nav ul li{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 300px;
+}
+
+/*푸터*/
+.footer{
+    background-color: #fafafa;
+    padding-bottom: 10px;
+    padding-top:10px;
+    list-style: none;
+    border-top: solid 1px #e3e3e3;
+    margin-top: 20px;
+}
+.right img{
+    vertical-align: middle;
+}
+
+
+.info p, .a_info p{
+    margin:0px;
+    padding:0px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    padding: 4px;
+    float: left;
+    
+}
+.info p span, .a_info p span{
+    font-weight: bold;
+}
+
+.info::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.a_info::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/*특별혜택 스마트폰 */
+.PhoneTitle{
+    margin-top:40px;
+}
+
+.PhoneTitle h1{
+    font-weight: 900;
+}
+
+.PhoneTitle span{
+    color:#ff2a48;
+}
+
+
+
+/*지원금*/
+.subsidy{
+    margin: 0 auto;
+}
+
+.subsidy_bg{
+    position: relative;
+    display: inline-block;
+    background-image:  url('/static/images/tele_support_tit.jpg');
+    width:930px;
+    height: 214px;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+.subsidy_button01,
+.subsidy_button02,
+.subsidy_button03
+{
+    position :absolute;
+    border:3px solid #fff;
+    display: flex;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.subsidy_button01{
+    left:430px;
+    bottom:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+}
+
+
+.subsidy_button02{
+    left:570px;
+    bottom:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+}
+
+
+.subsidy_button03{
+    left:700px;
+    bottom:20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #373e5a;
+}
+
+
+/*이용방법*/
+.information_chart_area{
+    height: 100%;
+    align-items: center;
+}
+
+.information_chart{
+    border:1px solid #dbdbdb;
+    color:#666;
+    border-radius: 10px;
+}
+.information_img{
+    text-align: center;
+}
+.information_text{
+    padding-left:0px !important;
+    padding-right: 20px !important;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.text_large{
+    font-size:16px;
+    margin:0;
+}
+.text_small{
+    font-size:13px;
+    margin:0;
+    margin-top:10px;
+}
+
+
+.txt_large{
+    font-size:16px;
+}
+.txt_small{
+    list-style:circle;
+    font-size:13px;
+}
+
+.items{
+    border-right: 1px solid #dbdbdb;
+    position: relative !important;
+}
+
+.items::after{
+    content: '';
+    display: block;
+    background: url('/static/images/service_arrow_icon.jpg');
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+}
+
+/*사전예약*/
+.advance_list{
+    cursor: pointer;
+}
+.advance_list:hover{
+    color:#ff2a48;
+}
+
+.advance_list_title,
+.advance_list_img{
+    margin-top:20px;
+}
+.advance_list_title h2{
+    font-weight: 900;
+}
+.advance_list_tag{
+    margin-top:30px;
+}
+.advance_tag{
+    display: inline-block;
+    padding:5 20 5 20;
+    background-color: #000;
+    color:#fff;
+    border-radius: 42px;
+    margin-right: 10px;
+}
+.advance_state{
+    display: inline-block;
+}
+
+.advance_list_button{
+    position: relative;
+    display: inline-block;
+    border: solid 1px #eee;
+    padding: 10px 80px;
+    margin-top: 30px;
+    color: #000;
+    overflow: hidden;
+}
+
+
+.advance_list:hover .advance_list_button::after {
+    left: 0;
+  }
+
+  .advance_list_button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3;
+    z-index: -1;
+    transition: left 0.3s;
+  }
+  
+/*모바일 사이즈 일 경우*/
+@media all and (max-width:767px){
+    /*모바일 footer*/
+    .m_footer{
+        display: block !important;
+    }
+    .info .a_info{
+        text-align: center;
+    }
+    .right{
+        text-align: center;
+    }
+    .right img{
+        margin-top:20px;
+    
+    }
+
+    /*Nav*/
+    nav ul{
+        margin:0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        margin-top:20px;
+    }
+    nav ul li{
+        padding-right: 0px;
+        padding-left: 0px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .logo img{
+        width: 180px;
+    }
+
+    .top{
+        display: block;
+    }
+
+
+    /*모바일 지원금*/
+    .subsidy{
+        height: 214px;
+    }
+    .subsidy_bg{
+        background-image:  url('/static/images/mobile_tele_support_tit.jpg');
+        width: 100%;
+        height: 100%;
+        background-size:cover;
+    }
+    
+    .subsidy_button01{
+        text-align: center;
+        left:54%;
+        bottom:45%;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        width:140px;
+        color:#fff;
+        display: block;
+    }
+    
+    
+    .subsidy_button02{
+        left:54%;
+        bottom:28%;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color:#fff;
+        width:140px;
+        display: block;
+        text-align: center;
+    }
+    
+    
+    .subsidy_button03{
+        left:54%;
+        bottom:11%;
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        color: #373e5a;
+        width:140px;
+        display: block;
+        text-align: center;
+    }
+    
+
+}
+

@@ -1,0 +1,83 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>정성폰에 오신 것을 환영합니다.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> <!--스와이퍼-->
+        <link rel="stylesheet" type="text/css" href="{% static 'style_sub.css' %}"> <!--개인 스타일 시트-->
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}"> <!--부트스트랩-->
+        
+        <script src="{% static 'jquery-3.4.1.min.js' %}"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="container-md my-3 top_area">
+            <div class="row justify-content-md-center">
+                <div class="top">
+                    <div class="logo">
+                        <a class="row justify-content-md-center" href="{%url 'main' %}"><img src="/static/images/PhoneLogo.png"  alt="로그인 로고" /></a>
+                    </div>
+                    <div class="top_nav">
+                        <nav>
+                            <ul>
+                                <a href="{%url 'device' %}"><li>스마트폰</li></a>
+                                <a href="{%url 'advance' %}"><li>사전예약</li></a>
+                                <a href="{%url 'hotdeal' %}"><li>핫딜</li></a>
+                                <a href="{%url 'information' %}"><li>이용안내</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+         
+        
+{% block content %}
+{% endblock %}
+        
+        <div class="footer">
+            <div class="container-md my-3 inner">
+                <div class="row m_footer">
+                    <div class="left"> 
+                        <div class="info">
+                            <p><span>티비즈네이션 주식회사</span></p>
+                            <p><span>주소</span> 서울 성동구 아차산로 17길 49 ,418호(성수동2가,생각공장데시앙플렉스)</p>
+                            <p><span>대표이사</span> 박건녕</p>
+                            <p><span>고객센터</span> 1688-2781</p>
+                        </div>
+                        <div class="a_info">
+                            <p><span>사업자 번호</span> 857-81-02233</p>
+                            <p><span>통신판매업신고</span> 제2021-서울성동-02491호 </p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="right">
+                        <img style="cursor:pointer; " src="https://www.ictmarket.or.kr:8443/getCertIcon.do?cert_icon=KP22011759618G001">
+                    </div> <!--사전승낙판매점-->
+                </div>
+            </div>
+        </div> <!--Footer 영역-->
+    </body>
+    
+    <script type="text/javascript">
+
+        let WindowWidth = $(window).width();
+        let Windowheight = $(window).height();
+
+        if(WindowWidth > 767){ // window 사이즈 일 경우 부트스트랩 아래 클래스를 적용한다.
+            $('.left').addClass('col-10');
+            $('.right').addClass('col-2');
+            $('.inner').addClass('text-center');
+        }
+
+    
+    </script>
+</html>
