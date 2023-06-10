@@ -210,6 +210,8 @@ nav ul li{
     padding-bottom:20px;
 }
 
+/*사전예약*/
+
 .text_large{
     font-size:16px;
     margin:0;
@@ -394,6 +396,76 @@ nav ul li{
         text-align: center;
     }
     
+    /*모바일 사전 예약*/
+    
+    .advance_list_title h2{
+        font-size:16px;
+    }
 
+    .advance_tag{
+        font-size: 12px;
+    }
+    .advance_state{
+        font-size:12px;
+    }
+    .advance_list_tag{
+        margin-top: 10px;
+    }
+
+    .advance_list_button{
+        padding: 5 40 5 40;
+        font-size: 14px;
+        margin-top:10px;
+    }
+    /*모바일 이용안내*/
+
+    .information_chart_area{
+        height: 100%;
+        align-items: center;
+    }
+
+    .information_chart{
+        border:1px solid #dbdbdb;
+        color:#666;
+        border-radius: 10px;
+    }
+    .information_img{
+        text-align: center;
+    }
+    .information_text{
+        padding-left:0px !important;
+        padding-right: 20px !important;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    /*사전예약*/
+
+    .text_large{
+        font-size:16px;
+        margin:0;
+    }
+    .text_small{
+        font-size:13px;
+        margin:0;
+        margin-top:10px;
+    }
+
+
+    .txt_large{
+        font-size:16px;
+    }
+    .txt_small{
+        list-style:circle;
+        font-size:13px;
+    }
+
+    .items{
+        border-right: none;
+    }
+    .items::after{
+        display: none;
+    }
+    
 }
 

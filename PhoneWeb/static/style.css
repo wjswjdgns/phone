@@ -103,6 +103,19 @@ nav ul li{
 
 
 /*메인 슬라이드 영역*/
+.imgSlide{
+    position :relative;
+}
+.SlideBulit{
+    position:absolute;
+    bottom:20px !important;
+
+}
+.swiper-pagination-bullet-active{
+    background-color: #ff2a48;
+}
+
+
 .mainslide01{
     background-image:  url('/static/images/mainslide01.jpg');
     width: 100%;
@@ -196,6 +209,9 @@ nav ul li{
   
 /*모바일 사이즈 일 경우*/
 @media all and (max-width:767px){
+    html, body{
+        overflow-x: hidden;
+    }
 
     /*모바일 footer*/
     .m_footer{
