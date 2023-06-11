@@ -19,7 +19,5 @@ def advance(request):
     return render(request, 'phone/advance.html')
 
 
-
-
 def information(request):
     return render(request, 'phone/information.html')
