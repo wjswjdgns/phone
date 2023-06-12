@@ -304,6 +304,12 @@ nav ul li{
     z-index: -1;
     transition: left 0.3s;
   }
+
+
+.wait{
+    padding : 200px;
+    margin-top: 40px;
+}
   
 /*모바일 사이즈 일 경우*/
 @media all and (max-width:767px){
